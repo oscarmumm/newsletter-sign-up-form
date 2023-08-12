@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="./style/main.css" />
+        <title>Newsletter sign-up form with success message</title>
+    </head>
+    <body>
+        <main class="main-container">
+            <section class="central-card">
+                <!-- Sign-up form start -->
+                <div class="sign-up flex" id="sign-up-section">
+                    <img
+                        class="illustration-sign-up-mobile"
+                        src="./assets/images/illustration-sign-up-mobile.svg"
+                        alt="illustration-sign-up-mobile"
+                    />
+                    <img
+                        class="illustration-sign-up-desktop"
+                        src="./assets/images/illustration-sign-up-desktop.svg"
+                        alt="illustration-sign-up-desktop"
+                    />
+                    <div class="stay-updated-div">
+                        <h1>Stay updated!</h1>
+                        <p>
+                            Join 60,000+ product managers receiving monthly
+                            updates on:
+                        </p>
+                        <ul>
+                            <li>Product discovery and building what matters</li>
+                            <li>Measuring to ensure updates are a success</li>
+                            <li>And much more!</li>
+                        </ul>
+
+                        <form class="sign-up-form">
+                          <label for="">
+                              <span id="email-error-msg" class="error-msg hidden">Valid mail required</span>
+                                Email address
+                                <input
+                                    class="input-email"
+                                    id="input-email"
+                                    type="email"
+                                    placeholder="email@company.com"
+                                />
+                            </label>
+                            <button class="btn btn-suscribe" id="btn-suscribe">
+                                Subscribe to monthly newsletter
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Sign-up form end -->
+                <!-- Success message start -->
+
+                <div class="success-msg hidden" id="success-msg-section">
+                    <div class="thanks-div">
+                        <img
+                            src="./assets/images/icon-success.svg"
+                            alt="icon-success"
+                        />
+                        <h2>Thanks for subscribing!</h2>
+                        <p>
+                            A confirmation email has been sent to
+                            <strong> ash@loremcompany.com</strong>. Please open
+                            it and click the button inside to confirm your
+                            subscription.
+                        </p>
+                    </div>
+                    <button class="btn btn-dismiss">Dismiss message</button>
+
+                    <!-- Success message end -->
+                </div>
+            </section>
+            <div class="attribution">
+                Challenge by
+                <a
+                    href="https://www.frontendmentor.io?ref=challenge"
+                    target="_blank"
+                    >Frontend Mentor</a
+                >. Coded by <a href="#">Oscar Mumm</a>.
+            </div>
+        </main>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
